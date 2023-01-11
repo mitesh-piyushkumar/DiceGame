@@ -3,6 +3,7 @@ import random
 
 #variables
 dice = [1, 2, 3, 4, 5, 6]
+rounds = 5
 
 #rolls the dice once and returns a number 
 def get_roll(dice, player):
@@ -83,13 +84,11 @@ def game(player1, player2, rounds, p1_score, p2_score, p1_scores, p2_scores):
     
 
 #runs the game
-def main():
+def main(rounds):
     p1_score = 0
     p2_score = 0
     p1_scores = []
     p2_scores = []
-    
-    rounds = 5
     
     player1 = input("Please enter player1's name: ")
     player2 = input("Please enter player2's name: ")
@@ -120,4 +119,4 @@ def main():
         print(f"{player2} won the game")
 
 
-main()
+main(rounds)
